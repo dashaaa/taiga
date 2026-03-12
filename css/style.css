@@ -227,7 +227,6 @@ nav ul li ul li a:hover {
 .content-section h2 {
     font-family: var(--font-body);
     font-size: 3rem;
-    line-height: 1.4;
     color: var(--primary-color);
     margin-bottom: 2rem;
     letter-spacing: -0.5px;
@@ -238,4 +237,11 @@ nav ul li ul li a:hover {
     line-height: 1.4;
     margin-bottom: 1.5rem;
     color: #4a4a4a;
+}
+
+.content-section h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+    color: var(--text-dark);
 }
