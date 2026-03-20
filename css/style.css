@@ -442,7 +442,7 @@ nav ul li ul li a:hover {
     .brand {
         display: flex;
         justify-content: space-between;
-        align-width: 100%;
+        width: 100%;
     }
     
     header {
@@ -488,6 +488,7 @@ nav ul li ul li a:hover {
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #eee;
+        color: #333;
     }
 
     /* Dropdowns on mobile */
