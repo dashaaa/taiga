@@ -710,3 +710,40 @@ nav ul li ul li a:hover {
     align-items: center;
     width: 100%;
 }
+
+
+/* --- Mobile Viewport Anti-Stretch Polish --- */
+.content-section p {
+    /* Prevent long URLs like the citations in why_forest from stretching the display */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        /* Ultimate safeguard to trap any rogue elements inflating the DOM horizontally */
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .content-section {
+        /* Prevent 12vw side-padding from choking out the remaining screen width on small phones */
+        padding: 3rem 1.5rem !important; 
+    }
+    
+    .content-section h2 {
+        /* Drop from 3rem to 2rem and heavily enforce break-words for long Russian text */
+        font-size: 2rem !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+    
+    .page-title {
+        /* Elevate slightly as 5vw is very small natively on phones */
+        font-size: 8vw !important; 
+    }
+}
